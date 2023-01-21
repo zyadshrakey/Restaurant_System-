@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="501.0" prefWidth="642.0" style="-fx-background-color: #152238;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.restraurantsystem.Drinks">
+    <children>
+        <Button layoutX="21.0" layoutY="139.0" mnemonicParsing="false" onAction="#AddKeweyPrice" prefHeight="35.0" prefWidth="74.0" style="-fx-background-color: #1c2e4a;" text="+" textFill="#f5f0f0" />
+        <Button layoutX="100.0" layoutY="139.0" mnemonicParsing="false" onAction="#removeKewey" prefHeight="35.0" prefWidth="74.0" style="-fx-background-color: #1c2e4a;" text="-" textFill="#f5f0f0" />
+        <Button layoutX="321.0" layoutY="211.0" mnemonicParsing="false" onAction="#removeLamonN3na3" prefHeight="35.0" prefWidth="46.0" style="-fx-background-color: #1c2e4a;" text="-" textFill="#f5f0f0" />
+        <Button layoutX="103.0" layoutY="377.0" mnemonicParsing="false" onAction="#removePepsi" prefHeight="35.0" prefWidth="74.0" style="-fx-background-color: #1c2e4a;" text="-" textFill="#f5f0f0" />
+        <Button layoutX="535.0" layoutY="139.0" mnemonicParsing="false" onAction="#removeManga" prefHeight="35.0" prefWidth="74.0" style="-fx-background-color: #1c2e4a;" text="-" textFill="#f5f0f0" />
+        <Button layoutX="535.0" layoutY="394.0" mnemonicParsing="false" onAction="#removeMilkCheck" prefHeight="35.0" prefWidth="74.0" style="-fx-background-color: #1c2e4a;" text="-" textFill="#f5f0f0" />
+        <Button layoutX="261.0" layoutY="211.0" mnemonicParsing="false" onAction="#AddLamonN3na3Price" prefHeight="35.0" prefWidth="46.0" style="-fx-background-color: #1c2e4a;" text="+" textFill="#f5f0f0" />
+        <Button layoutX="454.0" layoutY="139.0" mnemonicParsing="false" onAction="#AddMangaPrice" prefHeight="35.0" prefWidth="74.0" style="-fx-background-color: #1c2e4a;" text="+" textFill="#f5f0f0" />
+        <Button layoutX="21.0" layoutY="377.0" mnemonicParsing="false" onAction="#AddPepsiPrice" prefHeight="35.0" prefWidth="74.0" style="-fx-background-color: #1c2e4a;" text="+" textFill="#f5f0f0" />
+        <Button layoutX="270.0" layoutY="325.0" mnemonicParsing="false" onAction="#PrintSum" prefHeight="35.0" prefWidth="88.0" style="-fx-background-color: #1c2e4a;" text="Total" textFill="#f5f0f0">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+        <Button layoutX="454.0" layoutY="394.0" mnemonicParsing="false" onAction="#AddMilkCheckPrice" prefHeight="35.0" prefWidth="74.0" style="-fx-background-color: #1c2e4a;" text="+" textFill="#f5f0f0" />
+      <Text fx:id="textForKewey" fill="WHITE" layoutX="32.0" layoutY="197.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price=0" wrappingWidth="136.13671875" />
+      <Text fx:id="textForLamonN3na3" fill="WHITE" layoutX="253.0" layoutY="270.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price=0" wrappingWidth="136.13671875" />
+      <Text fx:id="textForManga" fill="WHITE" layoutX="462.0" layoutY="197.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price=0" wrappingWidth="136.13671875" />
+      <Text fx:id="textForMilkCheck" fill="WHITE" layoutX="454.0" layoutY="453.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price=0" wrappingWidth="136.13671875" />
+      <Text fx:id="textForPepsi" fill="WHITE" layoutX="29.0" layoutY="453.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price=0" wrappingWidth="136.13671875" />
+      <Text fx:id="textForPrice" fill="WHITE" layoutX="245.0" layoutY="417.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total=0" wrappingWidth="136.13671875">
+         <font>
+            <Font size="14.0" />
+         </font></Text>
+      <ImageView fitHeight="132.0" fitWidth="153.0" layoutX="21.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Users/Super%20Magic/FCI/GUIWIthJava/restraurantSystem/src/main/java/Imges/عصير%20كيوي.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="158.0" fitWidth="124.0" layoutX="261.0" layoutY="43.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Users/Super%20Magic/FCI/GUIWIthJava/restraurantSystem/src/main/java/Imges/عصير%20ليمون%20نعناع.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="132.0" fitWidth="153.0" layoutX="454.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Users/Super%20Magic/FCI/GUIWIthJava/restraurantSystem/src/main/java/Imges/عصير%20مانجا.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="132.0" fitWidth="153.0" layoutX="454.0" layoutY="265.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Users/Super%20Magic/FCI/GUIWIthJava/restraurantSystem/src/main/java/Imges/ميلك%20تشيك%20شوكلاته.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="132.0" fitWidth="153.0" layoutX="21.0" layoutY="246.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Users/Super%20Magic/FCI/GUIWIthJava/restraurantSystem/src/main/java/Imges/كانز%20بيبسي.jpg" />
+         </image>
+      </ImageView>
+
+
+    </children>
+
+</AnchorPane>

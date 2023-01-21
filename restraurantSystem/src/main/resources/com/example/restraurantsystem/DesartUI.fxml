@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="581.0" prefWidth="642.0" style="-fx-background-color: #152238;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.restraurantsystem.Desart">
+    <children>
+    <Button layoutX="182.0" layoutY="143.0" mnemonicParsing="false" onAction="#Add2atayfPrice" prefHeight="35.0" prefWidth="71.0" style="-fx-background-color: #1c2e4a;" text="+" textFill="#f5f0f0" />
+    <Button layoutX="254.0" layoutY="143.0" mnemonicParsing="false" onAction="#remove2atayf" prefHeight="35.0" prefWidth="71.0" style="-fx-background-color: #1c2e4a;" text="-" textFill="#f5f0f0" />
+    <Button layoutX="101.0" layoutY="143.0" mnemonicParsing="false" onAction="#removeB2lawa" prefHeight="35.0" prefWidth="71.0" style="-fx-background-color: #1c2e4a;" text="-" textFill="#f5f0f0" />
+    <Button layoutX="242.0" layoutY="368.0" mnemonicParsing="false" onAction="#AddrozblabnPrice" prefHeight="35.0" prefWidth="71.0" style="-fx-background-color: #1c2e4a;" text="+" textFill="#f5f0f0" />
+    <Button layoutX="104.0" layoutY="368.0" mnemonicParsing="false" onAction="#removeglash" prefHeight="35.0" prefWidth="71.0" style="-fx-background-color: #1c2e4a;" text="-" textFill="#f5f0f0" />
+    <Button layoutX="549.0" layoutY="368.0" mnemonicParsing="false" onAction="#removezalapya" prefHeight="35.0" prefWidth="71.0" style="-fx-background-color: #1c2e4a;" text="-" textFill="#f5f0f0" />
+    <Button layoutX="413.0" layoutY="143.0" mnemonicParsing="false" onAction="#removeMahlbya" prefHeight="35.0" prefWidth="71.0" style="-fx-background-color: #1c2e4a;" text="-" textFill="#f5f0f0" />
+    <Button layoutX="553.0" layoutY="143.0" mnemonicParsing="false" onAction="#removeOm3li" prefHeight="35.0" prefWidth="64.0" style="-fx-background-color: #1c2e4a;" text="-" textFill="#f5f0f0" />
+    <Button layoutX="20.0" layoutY="143.0" mnemonicParsing="false" onAction="#AddB2lawaPrice" prefHeight="35.0" prefWidth="71.0" style="-fx-background-color: #1c2e4a;" text="+" textFill="#f5f0f0" />
+    <Button layoutX="334.0" layoutY="143.0" mnemonicParsing="false" onAction="#AddMahlbyaPrice" prefHeight="35.0" prefWidth="71.0" style="-fx-background-color: #1c2e4a;" text="+" textFill="#f5f0f0" />
+    <Button layoutX="321.0" layoutY="368.0" mnemonicParsing="false" onAction="#removerozblabn" prefHeight="35.0" prefWidth="71.0" style="-fx-background-color: #1c2e4a;" text="-" textFill="#f5f0f0" />
+    <Button layoutX="24.0" layoutY="368.0" mnemonicParsing="false" onAction="#AddglashPrice" prefHeight="35.0" prefWidth="71.0" style="-fx-background-color: #1c2e4a;" text="+" textFill="#f5f0f0" />
+    <Button layoutX="117.0" layoutY="500.0" mnemonicParsing="false" onAction="#PrintSum" prefHeight="35.0" prefWidth="97.0" style="-fx-background-color: #1c2e4a;" text="Total" textFill="#f5f0f0">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+    <Button layoutX="470.0" layoutY="368.0" mnemonicParsing="false" onAction="#AddzalapyaPrice" prefHeight="35.0" prefWidth="71.0" style="-fx-background-color: #1c2e4a;" text="+" textFill="#f5f0f0" />
+    <Button layoutX="490.0" layoutY="143.0" mnemonicParsing="false" onAction="#AddOm3liPrice" prefHeight="35.0" prefWidth="64.0" style="-fx-background-color: #1c2e4a;" text="+" textFill="#f5f0f0" />
+    <Text fx:id="textForOm3li" fill="#f5f0f0" layoutX="506.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" text="price=" wrappingWidth="119.13671875" />
+    <Text fx:id="textFor2atayf" fill="#f5f0f0" layoutX="201.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" text="price=" wrappingWidth="119.13671875" />
+    <Text fx:id="textForMahlbya" fill="#f5f0f0" layoutX="349.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" text="price=" wrappingWidth="119.13671875" />
+    <Text fx:id="textForzalapya" fill="#f5f0f0" layoutX="488.0" layoutY="434.0" strokeType="OUTSIDE" strokeWidth="0.0" text="price=" wrappingWidth="119.13671875" />
+    <Text fx:id="textForrozblabn" fill="#f5f0f0" layoutX="261.0" layoutY="434.0" strokeType="OUTSIDE" strokeWidth="0.0" text="price=" wrappingWidth="119.13671875" />
+    <Text fx:id="textForglash" fill="#f5f0f0" layoutX="44.0" layoutY="433.0" strokeType="OUTSIDE" strokeWidth="0.0" text="price=" wrappingWidth="119.13671875" />
+    <Text fx:id="textForPrice" fill="#f5f0f0" layoutX="230.0" layoutY="522.0" strokeType="OUTSIDE" strokeWidth="0.0" text="total=0" wrappingWidth="139.1395263671875">
+         <font>
+            <Font size="14.0" />
+         </font></Text>
+      <ImageView fitHeight="100.0" fitWidth="157.0" layoutX="178.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Users/Super%20Magic/FCI/GUIWIthJava/restraurantSystem/src/main/java/Imges/قطايف.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="150.0" layoutX="20.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Users/Super%20Magic/FCI/GUIWIthJava/restraurantSystem/src/main/java/Imges/بقلاوة.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="150.0" layoutX="334.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Users/Super%20Magic/FCI/GUIWIthJava/restraurantSystem/src/main/java/Imges/مهلبيه.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="123.0" fitWidth="134.0" layoutX="491.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Users/Super%20Magic/FCI/GUIWIthJava/restraurantSystem/src/main/java/Imges/ام%20علي.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="150.0" layoutX="22.0" layoutY="278.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Users/Super%20Magic/FCI/GUIWIthJava/restraurantSystem/src/main/java/Imges/جلاش.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="150.0" layoutX="242.0" layoutY="278.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Users/Super%20Magic/FCI/GUIWIthJava/restraurantSystem/src/main/java/Imges/رز%20بلبن.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="150.0" layoutX="473.0" layoutY="278.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Users/Super%20Magic/FCI/GUIWIthJava/restraurantSystem/src/main/java/Imges/زلابيه.jpeg" />
+         </image>
+      </ImageView>
+      <Text fx:id="textForB2lawa" fill="#f5f0f0" layoutX="35.0" layoutY="195.0" strokeType="OUTSIDE" strokeWidth="0.0" text="price=" wrappingWidth="119.13671875" />
+
+
+    </children>
+</AnchorPane>

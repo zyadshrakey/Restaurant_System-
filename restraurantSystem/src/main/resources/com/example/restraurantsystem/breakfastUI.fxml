@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="449.0" prefWidth="545.0" style="-fx-background-color: #152238;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.restraurantsystem.breakfast">
+   <children>
+      <ImageView fitHeight="90.0" fitWidth="105.0" layoutX="19.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Users/Super%20Magic/FCI/GUIWIthJava/restraurantSystem/src/main/java/Imges/طعميه.jpg" />
+         </image></ImageView>
+      <Button layoutX="88.0" layoutY="17.0" mnemonicParsing="false" onAction="#AddT3myaPrice" prefHeight="44.0" prefWidth="34.0" style="-fx-background-color: #1c2e4a;" text="+" textFill="#f2eeee">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="88.0" layoutY="63.0" mnemonicParsing="false" onAction="#removeT3mya" prefHeight="44.0" prefWidth="34.0" style="-fx-background-color: #1c2e4a;" text="-" textFill="#f8f6f6">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Text fx:id="textForTa3mya" fill="#f2ecec" layoutX="14.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price = 0" wrappingWidth="106.0">
+         <font>
+            <Font size="13.0" />
+         </font></Text>
+      <ImageView fitHeight="59.0" fitWidth="126.0" layoutX="140.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Users/Super%20Magic/FCI/GUIWIthJava/restraurantSystem/src/main/java/Imges/طبق%20فول.png" />
+         </image></ImageView>
+      <Button layoutX="139.0" layoutY="85.0" mnemonicParsing="false" onAction="#AddFoolPrice" prefHeight="27.0" prefWidth="53.0" style="-fx-background-color: #1c2e4a;" text="+" textFill="#f2eded">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="190.0" layoutY="85.0" mnemonicParsing="false" onAction="#removeFool" prefHeight="27.0" prefWidth="53.0" style="-fx-background-color: #1c2e4a;" text="-" textFill="#f8f1f1">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Text fx:id="textForFool" fill="#eeeaea" layoutX="137.0" layoutY="129.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price = 0" wrappingWidth="106.0">
+         <font>
+            <Font size="13.0" />
+         </font></Text>
+      <ImageView fitHeight="90.0" fitWidth="105.0" layoutX="266.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Users/Super%20Magic/FCI/GUIWIthJava/restraurantSystem/src/main/java/Imges/جبنه%20رومي.jpeg" />
+         </image></ImageView>
+      <Button layoutX="266.0" layoutY="85.0" mnemonicParsing="false" onAction="#AddRomyPrice" prefHeight="27.0" prefWidth="53.0" style="-fx-background-color: #1c2e4a;" text="+" textFill="#fcf8f8">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="318.0" layoutY="85.0" mnemonicParsing="false" onAction="#removeRomy" prefHeight="27.0" prefWidth="53.0" style="-fx-background-color: #1c2e4a;" text="-" textFill="#f5efef">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Text fx:id="textForRomy" fill="#f5eeee" layoutX="265.0" layoutY="129.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price = 0" wrappingWidth="106.0">
+         <font>
+            <Font size="13.0" />
+         </font></Text>
+      <ImageView fitHeight="90.0" fitWidth="105.0" layoutX="389.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Users/Super%20Magic/FCI/GUIWIthJava/restraurantSystem/src/main/java/Imges/بطاطس.jpeg" />
+         </image></ImageView>
+      <Button layoutX="490.0" layoutY="17.0" mnemonicParsing="false" onAction="#AddBatatsPrice" prefHeight="44.0" prefWidth="34.0" style="-fx-background-color: #1c2e4a;" text="+" textFill="#f5f0f0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="490.0" layoutY="63.0" mnemonicParsing="false" onAction="#removeBatats" prefHeight="44.0" prefWidth="34.0" style="-fx-background-color: #1c2e4a;" text="-" textFill="#f2eded">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Text fx:id="textForBatats" fill="#f8f4f4" layoutX="389.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price = 0" wrappingWidth="106.0">
+         <font>
+            <Font size="13.0" />
+         </font></Text>
+      <ImageView fitHeight="90.0" fitWidth="105.0" layoutX="19.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Users/Super%20Magic/FCI/GUIWIthJava/restraurantSystem/src/main/java/Imges/بتنجان.jpg" />
+         </image></ImageView>
+      <Button layoutX="18.0" layoutY="270.0" mnemonicParsing="false" onAction="#AddBetnganPrice" prefHeight="27.0" prefWidth="53.0" style="-fx-background-color: #1c2e4a;" text="+" textFill="#eee9e9">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="71.0" layoutY="270.0" mnemonicParsing="false" onAction="#removeBetngan" prefHeight="27.0" prefWidth="53.0" style="-fx-background-color: #1c2e4a;" text="-" textFill="#f5f3f3">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Text fx:id="textForBetngan" fill="#f2efef" layoutX="25.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price = 0" wrappingWidth="106.0">
+         <font>
+            <Font size="13.0" />
+         </font></Text>
+      <ImageView fitHeight="59.0" fitWidth="126.0" layoutX="139.0" layoutY="199.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Users/Super%20Magic/FCI/GUIWIthJava/restraurantSystem/src/main/java/Imges/قشطه.jpeg" />
+         </image></ImageView>
+      <Button layoutX="139.0" layoutY="270.0" mnemonicParsing="false" onAction="#Add2shtaPrice" prefHeight="27.0" prefWidth="53.0" style="-fx-background-color: #1c2e4a;" text="+" textFill="#f8f4f4">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="190.0" layoutY="270.0" mnemonicParsing="false" onAction="#remove2shta" prefHeight="27.0" prefWidth="53.0" style="-fx-background-color: #1c2e4a;" text="-" textFill="#fcf5f5">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Text fx:id="textFor2shta" fill="#eeeded" layoutX="137.0" layoutY="319.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price = 0" wrappingWidth="106.0">
+         <font>
+            <Font size="13.0" />
+         </font></Text>
+      <ImageView fitHeight="90.0" fitWidth="105.0" layoutX="266.0" layoutY="198.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Users/Super%20Magic/FCI/GUIWIthJava/restraurantSystem/src/main/java/Imges/عسل%20ابيض.jpeg" />
+         </image></ImageView>
+      <Button layoutX="266.0" layoutY="270.0" mnemonicParsing="false" onAction="#Add3asalPrice" prefHeight="27.0" prefWidth="53.0" style="-fx-background-color: #1c2e4a;" text="+" textFill="#fff7f7">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="318.0" layoutY="270.0" mnemonicParsing="false" onAction="#remove3asal" prefHeight="27.0" prefWidth="53.0" style="-fx-background-color: #1c2e4a;" text="-" textFill="#eee7e7">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Text fx:id="textFor3asal" fill="#fffefe" layoutX="273.0" layoutY="318.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price = 0" wrappingWidth="106.0">
+         <font>
+            <Font size="13.0" />
+         </font></Text>
+      <ImageView fitHeight="90.0" fitWidth="105.0" layoutX="382.0" layoutY="198.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Users/Super%20Magic/FCI/GUIWIthJava/restraurantSystem/src/main/java/Imges/شكشوكه.jpg" />
+         </image></ImageView>
+      <Button layoutX="495.0" layoutY="193.0" mnemonicParsing="false" onAction="#AddShakahokaPrice" prefHeight="44.0" prefWidth="34.0" style="-fx-background-color: #1c2e4a;" text="+" textFill="#f8f1f1">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="495.0" layoutY="238.0" mnemonicParsing="false" onAction="#removeShakahoka" prefHeight="44.0" prefWidth="34.0" style="-fx-background-color: #1c2e4a;" text="-" textFill="#fcf7f7">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Text fx:id="textForShakahoka" fill="#f8f8f8" layoutX="389.0" layoutY="319.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price = 0" wrappingWidth="106.0">
+         <font>
+            <Font size="13.0" />
+         </font></Text>
+      <Text fx:id="textPrice" fill="#f8f5f5" layoutX="169.0" layoutY="396.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total = 0" wrappingWidth="149.0">
+         <font>
+            <Font size="13.0" />
+         </font></Text>
+      <Button layoutX="60.0" layoutY="376.0" mnemonicParsing="false" onAction="#PrintSum" prefHeight="27.0" prefWidth="90.0" style="-fx-background-color: #1c2e4a;" text="Total" textFill="#f8f4f4">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+
+   </children>
+</AnchorPane>

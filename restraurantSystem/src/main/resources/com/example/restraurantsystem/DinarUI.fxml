@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="550.0" prefWidth="650.0" style="-fx-background-color: #152238;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.restraurantsystem.Dinar">
+   <children>
+      <Button layoutX="24.0" layoutY="131.0" mnemonicParsing="false" onAction="#AddShawrmaPrice" prefHeight="35.0" prefWidth="64.0" style="-fx-background-color: #1c2e4a;" text="+" textFill="#f5f0f0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="97.0" layoutY="131.0" mnemonicParsing="false" onAction="#removeShawrma" prefHeight="35.0" prefWidth="64.0" style="-fx-background-color: #1c2e4a;" text="-" textFill="#f5f0f0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="253.0" layoutY="131.0" mnemonicParsing="false" onAction="#removeKebda" prefHeight="35.0" prefWidth="64.0" style="-fx-background-color: #1c2e4a;" text="-" textFill="#f5f0f0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="566.0" layoutY="386.0" mnemonicParsing="false" onAction="#removeSambosk" prefHeight="35.0" prefWidth="64.0" style="-fx-background-color: #1c2e4a;" text="-" textFill="#f5f0f0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="182.0" layoutY="385.0" mnemonicParsing="false" onAction="#Add7awwshyPrice" prefHeight="35.0" prefWidth="64.0" style="-fx-background-color: #1c2e4a;" text="+" textFill="#f5f0f0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="97.0" layoutY="386.0" mnemonicParsing="false" onAction="#removePizza" prefHeight="35.0" prefWidth="64.0" style="-fx-background-color: #1c2e4a;" text="-" textFill="#f5f0f0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="409.0" layoutY="385.0" mnemonicParsing="false" onAction="#removeChickenBargar" prefHeight="35.0" prefWidth="64.0" style="-fx-background-color: #1c2e4a;" text="-" textFill="#f5f0f0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="409.0" layoutY="131.0" mnemonicParsing="false" onAction="#removeFeteraGbna" prefHeight="35.0" prefWidth="64.0" style="-fx-background-color: #1c2e4a;" text="-" textFill="#f5f0f0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="566.0" layoutY="131.0" mnemonicParsing="false" onAction="#removeKreb" prefHeight="35.0" prefWidth="64.0" style="-fx-background-color: #1c2e4a;" text="-" textFill="#f5f0f0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="182.0" layoutY="131.0" mnemonicParsing="false" onAction="#AddKebdaPrice" prefHeight="35.0" prefWidth="64.0" style="-fx-background-color: #1c2e4a;" text="+" textFill="#f5f0f0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="339.0" layoutY="131.0" mnemonicParsing="false" onAction="#AddFeteraGbnaPrice" prefHeight="35.0" prefWidth="64.0" style="-fx-background-color: #1c2e4a;" text="+" textFill="#f5f0f0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="253.0" layoutY="385.0" mnemonicParsing="false" onAction="#remove7awwshy" prefHeight="35.0" prefWidth="64.0" style="-fx-background-color: #1c2e4a;" text="-" textFill="#f5f0f0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="24.0" layoutY="385.0" mnemonicParsing="false" onAction="#AddPizzaPrice" prefHeight="35.0" prefWidth="64.0" style="-fx-background-color: #1c2e4a;" text="+" textFill="#f5f0f0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="492.0" layoutY="386.0" mnemonicParsing="false" onAction="#AddSamboskPrice" prefHeight="35.0" prefWidth="64.0" style="-fx-background-color: #1c2e4a;" text="+" textFill="#f5f0f0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="339.0" layoutY="385.0" mnemonicParsing="false" onAction="#AddChickenBargarPrice" prefHeight="35.0" prefWidth="64.0" style="-fx-background-color: #1c2e4a;" text="+" textFill="#f5f0f0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="501.0" layoutY="131.0" mnemonicParsing="false" onAction="#AddKrebPrice" prefHeight="35.0" prefWidth="64.0" style="-fx-background-color: #1c2e4a;" text="+" textFill="#f5f0f0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Text fx:id="textForKreb" fill="#f5f0f0" layoutX="522.0" layoutY="207.0" strokeType="OUTSIDE" strokeWidth="0.0" text="price=" wrappingWidth="119.13671875" />
+      <Text fx:id="textForShawrma" fill="#f5f0f0" layoutX="37.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="price=" wrappingWidth="119.13671875" />
+      <Text fx:id="textForKebda" fill="#f5f0f0" layoutX="183.0" layoutY="206.0" strokeType="OUTSIDE" strokeWidth="0.0" text="price=" wrappingWidth="119.13671875" />
+      <Text fx:id="textForFeteraGbna" fill="#f5f0f0" layoutX="350.0" layoutY="207.0" strokeType="OUTSIDE" strokeWidth="0.0" text="price=" wrappingWidth="119.13671875" />
+      <Text fx:id="textForSambosk" fill="#f5f0f0" layoutX="490.0" layoutY="451.0" strokeType="OUTSIDE" strokeWidth="0.0" text="price=" wrappingWidth="119.13671875" />
+      <Text fx:id="textForChickenBargar" fill="#f5f0f0" layoutX="349.0" layoutY="451.0" strokeType="OUTSIDE" strokeWidth="0.0" text="price=" wrappingWidth="119.13671875" />
+      <Text fx:id="textFor7awwshy" fill="#f5f0f0" layoutX="186.0" layoutY="451.0" strokeType="OUTSIDE" strokeWidth="0.0" text="price=" wrappingWidth="119.13671875" />
+      <Text fx:id="textForPizza" fill="#f5f0f0" layoutX="37.0" layoutY="451.0" strokeType="OUTSIDE" strokeWidth="0.0" text="price=" wrappingWidth="119.13671875" />
+      <Text fx:id="textForPrice" fill="#f5f0f0" layoutX="269.0" layoutY="508.0" strokeType="OUTSIDE" strokeWidth="0.0" text="total=0" wrappingWidth="139.1395263671875">
+         <font>
+            <Font name="System Italic" size="17.0" />
+         </font>
+      </Text>
+      <Button layoutX="161.0" layoutY="490.0" mnemonicParsing="false" onAction="#PrintSum" prefHeight="30.0" prefWidth="84.0" style="-fx-background-color: #1c2e4a;" text="Total" textFill="#f5f0f0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="95.0" fitWidth="139.0" layoutX="34.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="C:\Users\Super Magic\FCI\GUIWIthJava\restraurantSystem\src\main\java\Imges\شاورما.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="104.0" fitWidth="139.0" layoutX="184.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="C:\Users\Super Magic\FCI\GUIWIthJava\restraurantSystem\src\main\java\Imges\كبده.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="75.0" fitWidth="139.0" layoutX="345.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="C:\Users\Super Magic\FCI\GUIWIthJava\restraurantSystem\src\main\java\Imges\فطيرة بلجبنه.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="103.0" fitWidth="113.0" layoutX="514.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Users/Super%20Magic/FCI/GUIWIthJava/restraurantSystem/src/main/java/Imges/كريب.jpg" />
+         </image></ImageView>
+      <ImageView fitHeight="110.0" fitWidth="128.0" layoutX="501.0" layoutY="262.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Users/Super%20Magic/FCI/GUIWIthJava/restraurantSystem/src/main/java/Imges/سمبوسك.jpeg" />
+         </image></ImageView>
+      <ImageView fitHeight="113.0" fitWidth="139.0" layoutX="339.0" layoutY="270.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Users/Super%20Magic/FCI/GUIWIthJava/restraurantSystem/src/main/java/Imges/ساندوتش%20فراخ.jpg" />
+         </image></ImageView>
+      <ImageView fitHeight="150.0" fitWidth="129.0" layoutX="189.0" layoutY="272.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Users/Super%20Magic/FCI/GUIWIthJava/restraurantSystem/src/main/java/Imges/حواوشي.jpeg" />
+         </image></ImageView>
+      <ImageView fitHeight="89.0" fitWidth="127.0" layoutX="29.0" layoutY="272.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Users/Super%20Magic/FCI/GUIWIthJava/restraurantSystem/src/main/java/Imges/بيتزا.jpeg" />
+         </image></ImageView>
+   </children>
+</AnchorPane>

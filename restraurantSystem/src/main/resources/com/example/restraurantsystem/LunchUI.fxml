@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="657.0" prefWidth="790.0" style="-fx-background-color: #152238;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.restraurantsystem.Lunch">
+   <children>
+      <Button layoutX="14.0" layoutY="90.0" mnemonicParsing="false" onAction="#AddRicePrice" prefHeight="67.0" prefWidth="34.0" style="-fx-background-color: #1c2e4a;" text="+" textFill="#f5f0f0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#removeRice" prefHeight="67.0" prefWidth="34.0" style="-fx-background-color: #1c2e4a;" text="-" textFill="#f5f0f0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="215.0" layoutY="14.0" mnemonicParsing="false" onAction="#removeMa7shy" prefHeight="67.0" prefWidth="34.0" style="-fx-background-color: #1c2e4a;" text="-" textFill="#f5f0f0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="592.0" layoutY="207.0" mnemonicParsing="false" onAction="#removeKofta" prefHeight="67.0" prefWidth="34.0" style="-fx-background-color: #1c2e4a;" text="-" textFill="#f5f0f0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="215.0" layoutY="283.0" mnemonicParsing="false" onAction="#AddBamyaPrice" prefHeight="67.0" prefWidth="34.0" style="-fx-background-color: #1c2e4a;" text="+" textFill="#f5f0f0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="14.0" layoutY="207.0" mnemonicParsing="false" onAction="#removeMombar" prefHeight="67.0" prefWidth="34.0" style="-fx-background-color: #1c2e4a;" text="-" textFill="#f5f0f0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="388.0" layoutY="207.0" mnemonicParsing="false" onAction="#removeMolo5ya" prefHeight="67.0" prefWidth="34.0" style="-fx-background-color: #1c2e4a;" text="-" textFill="#f5f0f0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="388.0" layoutY="14.0" mnemonicParsing="false" onAction="#removeMakronaBashmel" prefHeight="67.0" prefWidth="34.0" style="-fx-background-color: #1c2e4a;" text="-" textFill="#f5f0f0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="592.0" layoutY="17.0" mnemonicParsing="false" onAction="#removeChicken" prefHeight="67.0" prefWidth="34.0" style="-fx-background-color: #1c2e4a;" text="-" textFill="#f5f0f0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="215.0" layoutY="90.0" mnemonicParsing="false" onAction="#AddMa7shyPrice" prefHeight="67.0" prefWidth="34.0" style="-fx-background-color: #1c2e4a;" text="+" textFill="#f5f0f0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="388.0" layoutY="90.0" mnemonicParsing="false" onAction="#AddMakronaBashmelPrice" prefHeight="67.0" prefWidth="34.0" style="-fx-background-color: #1c2e4a;" text="+" textFill="#f5f0f0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="215.0" layoutY="207.0" mnemonicParsing="false" onAction="#removeBamya" prefHeight="67.0" prefWidth="34.0" style="-fx-background-color: #1c2e4a;" text="-" textFill="#f5f0f0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="14.0" layoutY="283.0" mnemonicParsing="false" onAction="#AddMombarPrice" prefHeight="67.0" prefWidth="34.0" style="-fx-background-color: #1c2e4a;" text="+" textFill="#f5f0f0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="592.0" layoutY="283.0" mnemonicParsing="false" onAction="#AddKoftaPrice" prefHeight="67.0" prefWidth="34.0" style="-fx-background-color: #1c2e4a;" text="+" textFill="#f5f0f0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="388.0" layoutY="283.0" mnemonicParsing="false" onAction="#AddMolo5yaPrice" prefHeight="67.0" prefWidth="34.0" style="-fx-background-color: #1c2e4a;" text="+" textFill="#f5f0f0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="592.0" layoutY="90.0" mnemonicParsing="false" onAction="#AddChickenPrice" prefHeight="67.0" prefWidth="34.0" style="-fx-background-color: #1c2e4a;" text="+" textFill="#f5f0f0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Text fx:id="textForChicken" fill="#f5f0f0" layoutX="587.0" layoutY="186.0" strokeType="OUTSIDE" strokeWidth="0.0" text="price=" wrappingWidth="188.13671875" />
+      <Text fx:id="textForRice" fill="#f5f0f0" layoutX="14.0" layoutY="179.0" strokeType="OUTSIDE" strokeWidth="0.0" text="price=" wrappingWidth="119.13671875" />
+      <Text fx:id="textForMa7shy" fill="#f5f0f0" layoutX="220.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="price=" wrappingWidth="119.13671875" />
+      <Text fx:id="textForMakronaBashmel" fill="#f5f0f0" layoutX="379.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="price=" wrappingWidth="172.13671875" />
+      <Text fx:id="textForKofta" fill="#f5f0f0" layoutX="592.0" layoutY="364.0" strokeType="OUTSIDE" strokeWidth="0.0" text="price=" wrappingWidth="119.13671875" />
+      <Text fx:id="textForMolo5ya" fill="#f5f0f0" layoutX="379.0" layoutY="368.0" strokeType="OUTSIDE" strokeWidth="0.0" text="price=" wrappingWidth="119.13671875" />
+      <Text fx:id="textForBamya" fill="#f5f0f0" layoutX="215.0" layoutY="365.0" strokeType="OUTSIDE" strokeWidth="0.0" text="price=" wrappingWidth="119.13671875" />
+      <Text fx:id="textForMombar" fill="#f5f0f0" layoutX="14.0" layoutY="366.0" strokeType="OUTSIDE" strokeWidth="0.0" text="price=" wrappingWidth="119.13671875" />
+      <Text fx:id="textForPrice" fill="#f5f0f0" layoutX="309.0" layoutY="618.0" strokeType="OUTSIDE" strokeWidth="0.0" text="total=0" wrappingWidth="139.1395263671875">
+         <font>
+            <Font name="System Italic" size="17.0" />
+         </font>
+      </Text>
+      <Button layoutX="215.0" layoutY="593.0" mnemonicParsing="false" onAction="#PrintSum" style="-fx-background-color: #1c2e4a;" text="Total" textFill="#f5f0f0">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="592.0" layoutY="403.0" mnemonicParsing="false" onAction="#removeShesh" prefHeight="67.0" prefWidth="34.0" style="-fx-background-color: #1c2e4a;" text="-" textFill="#f5f0f0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="592.0" layoutY="478.0" mnemonicParsing="false" onAction="#AddSheshPrice" prefHeight="67.0" prefWidth="34.0" style="-fx-background-color: #1c2e4a;" text="+" textFill="#f5f0f0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="388.0" layoutY="403.0" mnemonicParsing="false" onAction="#removeShorba" prefHeight="67.0" prefWidth="34.0" style="-fx-background-color: #1c2e4a;" text="-" textFill="#f5f0f0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="388.0" layoutY="478.0" mnemonicParsing="false" onAction="#AddShorbaPrice" prefHeight="67.0" prefWidth="34.0" style="-fx-background-color: #1c2e4a;" text="+" textFill="#f5f0f0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="215.0" layoutY="403.0" mnemonicParsing="false" onAction="#removeFish" prefHeight="67.0" prefWidth="34.0" style="-fx-background-color: #1c2e4a;" text="-" textFill="#f5f0f0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="215.0" layoutY="478.0" mnemonicParsing="false" onAction="#AddFishPrice" prefHeight="67.0" prefWidth="34.0" style="-fx-background-color: #1c2e4a;" text="+" textFill="#f5f0f0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="14.0" layoutY="403.0" mnemonicParsing="false" onAction="#removeGampry" prefHeight="67.0" prefWidth="34.0" style="-fx-background-color: #1c2e4a;" text="-" textFill="#f5f0f0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="14.0" layoutY="478.0" mnemonicParsing="false" onAction="#AddGampryPrice" prefHeight="67.0" prefWidth="34.0" style="-fx-background-color: #1c2e4a;" text="+" textFill="#f5f0f0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Text fx:id="textForGampry" fill="#f5f0f0" layoutX="14.0" layoutY="575.0" strokeType="OUTSIDE" strokeWidth="0.0" text="price=" wrappingWidth="119.13671875" />
+      <Text fx:id="textForFish" fill="#f5f0f0" layoutX="202.0" layoutY="575.0" strokeType="OUTSIDE" strokeWidth="0.0" text="price=" wrappingWidth="119.13671875" />
+      <Text fx:id="textForShorba" fill="#f5f0f0" layoutX="379.0" layoutY="575.0" strokeType="OUTSIDE" strokeWidth="0.0" text="price=" wrappingWidth="119.13671875" />
+      <Text fx:id="textForShesh" fill="#f5f0f0" layoutX="587.0" layoutY="575.0" strokeType="OUTSIDE" strokeWidth="0.0" text="price=" wrappingWidth="119.13671875" />
+      <ImageView fitHeight="150.0" fitWidth="149.0" layoutX="632.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Users/Super%20Magic/FCI/GUIWIthJava/restraurantSystem/src/main/java/Imges/فرخه%20مشويه.jpeg" />
+         </image></ImageView>
+      <ImageView fitHeight="150.0" fitWidth="160.0" layoutX="428.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Users/Super Magic/FCI/GUIWIthJava/restraurantSystem/src/main/java/Imges/مكرونه%20بشاميل.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="160.0" layoutX="428.0" layoutY="208.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Users/Super Magic/FCI/GUIWIthJava/restraurantSystem/src/main/java/Imges/ملوخيه.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="131.0" layoutX="256.0" layoutY="208.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Users/Super Magic/FCI/GUIWIthJava/restraurantSystem/src/main/java/Imges/باميه.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="131.0" layoutX="258.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Users/Super Magic/FCI/GUIWIthJava/restraurantSystem/src/main/java/Imges/محشي%20كرنب.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="160.0" layoutX="48.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Users/Super Magic/FCI/GUIWIthJava/restraurantSystem/src/main/java/Imges/رز.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="160.0" layoutX="48.0" layoutY="208.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Users/Super Magic/FCI/GUIWIthJava/restraurantSystem/src/main/java/Imges/ممبار.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="160.0" layoutX="48.0" layoutY="403.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Users/Super Magic/FCI/GUIWIthJava/restraurantSystem/src/main/java/Imges/جمبري.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="131.0" layoutX="252.0" layoutY="403.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Users/Super Magic/FCI/GUIWIthJava/restraurantSystem/src/main/java/Imges/سمك.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="160.0" layoutX="428.0" layoutY="403.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Users/Super Magic/FCI/GUIWIthJava/restraurantSystem/src/main/java/Imges/شوربه%20لسان%20عصفور.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="160.0" layoutX="631.0" layoutY="208.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Users/Super Magic/FCI/GUIWIthJava/restraurantSystem/src/main/java/Imges/كفته.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="160.0" layoutX="631.0" layoutY="403.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Users/Super Magic/FCI/GUIWIthJava/restraurantSystem/src/main/java/Imges/شيش-طاووق.jpeg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

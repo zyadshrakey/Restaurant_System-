@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="400.0" maxWidth="600.0" minHeight="400.0" minWidth="600.0" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #152238;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.restraurantsystem.HelloController">
+   <children>
+      <Button layoutX="41.0" layoutY="37.0" mnemonicParsing="false" onAction="#clickOnBreakfast" prefHeight="47.0" prefWidth="197.0" style="-fx-background-color: #1c2e4a;" text="BreakFast" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="41.0" layoutY="96.0" mnemonicParsing="false" onAction="#clickOnLunch" prefHeight="47.0" prefWidth="197.0" style="-fx-background-color: #1c2e4a;" text="Lunch" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="41.0" layoutY="154.0" mnemonicParsing="false" onAction="#clickOnDinar" prefHeight="47.0" prefWidth="197.0" style="-fx-background-color: #1c2e4a;" text="Dinner" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="41.0" layoutY="214.0" mnemonicParsing="false" onAction="#clickOnDesat" prefHeight="47.0" prefWidth="197.0" style="-fx-background-color: #1c2e4a;" text="Dessert" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="41.0" layoutY="273.0" mnemonicParsing="false" onAction="#clickOnDrinks" prefHeight="47.0" prefWidth="197.0" style="-fx-background-color: #1c2e4a;" text="Drink" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <ImageView fitHeight="249.0" fitWidth="264.0" layoutX="303.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Users/Super%20Magic/FCI/GUIWIthJava/restraurantSystem/src/main/java/Imges/clowns%20-logos_white.png" />
+         </image>
+      </ImageView>
+      <Line endX="-98.0" endY="18.0" layoutX="389.0" layoutY="45.0" startX="-98.0" startY="256.0" stroke="#203354">
+         <cursor>
+            <Cursor fx:constant="WAIT" />
+         </cursor>
+      </Line>
+   </children>
+
+</Pane>
